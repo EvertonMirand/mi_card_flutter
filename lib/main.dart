@@ -9,53 +9,20 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.blue,
+        backgroundColor: Colors.teal,
         body: SafeArea(
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
-              Container(
-                height: 100,
-                width: 100,
-                color: Colors.white,
-                child: Text('Container 1'),
+              CircleAvatar(
+                radius: 50.0,
+                backgroundImage: AssetImage('images/avatar.png'),
               ),
-              SizedBox(
-                height: 20,
-              ),
-              Container(
-                height: 100,
-                width: 100,
-                color: Colors.teal,
-                child: Text('Container 2'),
-              ),
-              Container(
-                height: 100,
-                width: 100,
-                color: Colors.red,
-                child: Text('Container 3'),
-              ),
-              Row(
-                children: <Widget>[
-                  Container(
-                    height: 100,
-                    width: 100,
+              Text(
+                'Everton Miranda Vitório',
+                style: TextStyle(
+                    fontSize: 40,
                     color: Colors.white,
-                    child: Text('Container 1'),
-                  ),
-                  Container(
-                    height: 100,
-                    width: 100,
-                    color: Colors.teal,
-                    child: Text('Container 2'),
-                  ),
-                  Container(
-                    height: 100,
-                    width: 100,
-                    color: Colors.red,
-                    child: Text('Container 3'),
-                  ),
-                ],
+                    fontWeight: FontWeight.bold),
               )
             ],
           ),
