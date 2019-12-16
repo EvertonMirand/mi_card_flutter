@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(
-    MyApp()
-  );
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -13,11 +11,53 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.blue,
         body: SafeArea(
-          child: Container(
-            margin: EdgeInsets.fromLTRB(30, 10, 50, 20),
-            padding: EdgeInsets.only(left: 30),
-            color: Colors.white,
-            child: SafeArea(child: Text('Hello'),),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: <Widget>[
+              Container(
+                height: 100,
+                width: 100,
+                color: Colors.white,
+                child: Text('Container 1'),
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              Container(
+                height: 100,
+                width: 100,
+                color: Colors.teal,
+                child: Text('Container 2'),
+              ),
+              Container(
+                height: 100,
+                width: 100,
+                color: Colors.red,
+                child: Text('Container 3'),
+              ),
+              Row(
+                children: <Widget>[
+                  Container(
+                    height: 100,
+                    width: 100,
+                    color: Colors.white,
+                    child: Text('Container 1'),
+                  ),
+                  Container(
+                    height: 100,
+                    width: 100,
+                    color: Colors.teal,
+                    child: Text('Container 2'),
+                  ),
+                  Container(
+                    height: 100,
+                    width: 100,
+                    color: Colors.red,
+                    child: Text('Container 3'),
+                  ),
+                ],
+              )
+            ],
           ),
         ),
       ),
