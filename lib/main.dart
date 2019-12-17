@@ -20,9 +20,20 @@ class MyApp extends StatelessWidget {
               Text(
                 'Everton Miranda Vitório',
                 style: TextStyle(
-                    fontSize: 40,
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold),
+                  fontFamily: 'Pacifico',
+                  fontSize: 40,
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              Text(
+                'REACT NATIVE DEVELOPER',
+                style: TextStyle(
+                  fontFamily: 'Source Sans Pro',
+                  fontSize: 20,
+                  letterSpacing: 2.5,
+                  color: Colors.teal[100],
+                ),
               )
             ],
           ),
